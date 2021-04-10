@@ -48,7 +48,7 @@ mutation {
 git status
 git add .
 git commit -m "commit comment"
-git push keystone_repo2 master
+git push graphql_test1 master
 
 echo "# graphql_test1" >> README.md
 git init
