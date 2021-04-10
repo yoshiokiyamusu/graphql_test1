@@ -1,0 +1,59 @@
+npm run start
+npm i mongoose
+
+/*Babel para leer las ultimas versiones de JS*/
+
+
+query{
+  Tasks {
+    _id
+    title
+    description
+  }
+}
+
+query{
+  Users{
+    _id
+    firstname
+    lastname
+    age
+  }
+}
+
+
+mutation {
+  createTask(input: {title: "titulo ejemplo", description: "sd sdfs", number: 12}) {
+    _id
+    title
+    description
+    number
+  }
+}
+
+mutation {
+  createUser(input: {firstname:"yoshioks", lastname:"Kiyamu", age: 31}) {
+    _id firstname lastname age 
+  }
+}
+
+mutation {
+  updateUser( _id:"60713e57ec13281ff094a973", 
+    input: {firstname:"fioedited", lastname:"Kiyamu", age: 31}
+  ){ firstname lastname }
+}
+
+
+---DEPLOY HEROKU ---------------------------------------
+git status
+git add .
+git commit -m "commit comment"
+git push keystone_repo2 master
+
+echo "# graphql_test1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add graphql_test1 https://github.com/yoshiokiyamusu/graphql_test1.git
+git push -u origin main
