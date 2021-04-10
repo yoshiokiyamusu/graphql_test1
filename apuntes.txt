@@ -57,3 +57,8 @@ git commit -m "first commit"
 git branch -M main
 git remote add graphql_test1 https://github.com/yoshiokiyamusu/graphql_test1.git
 git push -u origin main
+
+
+error on deployment
+npm install --save-dev @babel/node
+
